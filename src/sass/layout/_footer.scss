@@ -1,0 +1,38 @@
+.footer {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .todos__length,
+  .clear__btn {
+    color: $dark-grayish-blue;
+  }
+
+  .row {
+    background-color: $dark-desaturated-blue;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+
+    .todos__status {
+      color: $dark-grayish-blue;
+      font-weight: 600;
+
+      &.active {
+        color: $bright-blue;
+      }
+    }
+  }
+}
